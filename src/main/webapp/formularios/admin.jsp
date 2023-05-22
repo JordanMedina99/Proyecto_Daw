@@ -82,7 +82,7 @@
   </main>
   
   <footer>
-    <p>Derechos de autor copy Jordan Medina; 2023</p>
+    <p>Derechos de autor copy Jordan Medina Tafolla; 2023</p>
   </footer>
 </body>
 </html>
