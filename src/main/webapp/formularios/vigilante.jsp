@@ -7,6 +7,6 @@
 <title>Bienvenidos tributos </title>
 </head>
 <body>
-    <h1>Esperemos que den lo mejor por sus distritos</h1>
+    <h1>Esperemos que den lo mejor por sus distritos y por el presidente</h1>
 </body>
 </html>
