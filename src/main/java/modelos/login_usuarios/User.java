@@ -44,7 +44,7 @@ public class User {
   public static List<User> getUsers() {
     List<User> userList = new ArrayList<>();
     userList.add(new User("presidente", "cornelius", "admin"));
-    userList.add(new User("vigilante", "agila", "cuidador"));
+    userList.add(new User("vigilante", "aguila", "cuidador"));
     userList.add(new User("mentor", "sasuke", "mentor"));
     userList.add(new User("tributos", "cuidador", "vigilante"));
     // Agregar más usuarios si es necesario
