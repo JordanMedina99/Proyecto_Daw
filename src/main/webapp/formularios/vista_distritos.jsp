@@ -37,7 +37,7 @@
   </style>
 </head>
 <body>
-  <img src="logo_capitolio.png" alt="Logo"> <!-- Cambia "ruta-a-tu-imagen.jpg" por la ruta de tu imagen -->
+  <img src="../images/logo_capitolio.png" alt="Logo"> <!-- Cambia "ruta-a-tu-imagen.jpg" por la ruta de tu imagen -->
 
   <table>
     <thead>
