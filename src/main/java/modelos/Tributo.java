@@ -4,47 +4,55 @@ import java.io.Serializable;
 
 public class Tributo implements Serializable {
     private static final long serialVersionUID = 1L;
-    private int idTributo;
+    private int id_tributo;
     private String curp;
     private String nombre;
     private String sexo;
     private int edad;
     private String habilidad;
-    private int espectaculoPuntuacion;
-    private int distritoId;
+    private int espectaculo_puntuacion;
+    private int distrito_id;
 
-    public Tributo() {
+    public Tributo(int id_tributo, String curp, String nombre, String sexo, int edad, String habilidad, int espectaculo_puntuacion, int distrito_id){
+    	this.id_tributo = id_tributo;
+        this.curp = curp;
+        this.nombre = nombre;
+        this.sexo = sexo;
+        this.edad = edad;
+        this.habilidad = habilidad;
+        this.espectaculo_puntuacion = espectaculo_puntuacion;
+        this.distrito_id = distrito_id;
     }
 
-    public int getIdTributo() {
-        return idTributo;
+    public int getid_tributo() {
+        return id_tributo;
     }
 
-    public void setIdTributo(int idTributo) {
-        this.idTributo = idTributo;
+    public void setid_tributo(int id_tributo) {
+        this.id_tributo = id_tributo;
     }
 
-    public String getCurp() {
+    public String getcurp() {
         return curp;
     }
 
-    public void setCurp(String curp) {
+    public void setcurp(String curp) {
         this.curp = curp;
     }
 
-    public String getNombre() {
+    public String getnombre() {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
+    public void setnombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public String getSexo() {
+    public String getsexo() {
         return sexo;
     }
 
-    public void setSexo(String sexo) {
+    public void setsexo(String sexo) {
         this.sexo = sexo;
     }
 
@@ -52,31 +60,31 @@ public class Tributo implements Serializable {
         return edad;
     }
 
-    public void setEdad(int edad) {
+    public void setedad(int edad) {
         this.edad = edad;
     }
 
-    public String getHabilidad() {
+    public String gethabilidad() {
         return habilidad;
     }
 
-    public void setHabilidad(String habilidad) {
+    public void sethabilidad(String habilidad) {
         this.habilidad = habilidad;
     }
 
-    public int getEspectaculoPuntuacion() {
-        return espectaculoPuntuacion;
+    public int getespectaculo_puntuacion() {
+        return espectaculo_puntuacion;
     }
 
-    public void setEspectaculoPuntuacion(int espectaculoPuntuacion) {
-        this.espectaculoPuntuacion = espectaculoPuntuacion;
+    public void setespectaculo_puntuacion(int espectaculo_puntuacion) {
+        this.espectaculo_puntuacion = espectaculo_puntuacion;
     }
 
-    public int getDistritoId() {
-        return distritoId;
+    public int getdistrito_id() {
+        return distrito_id;
     }
 
-    public void setDistritoId(int distritoId) {
-        this.distritoId = distritoId;
+    public void setdistrito_id(int distrito_id) {
+        this.distrito_id = distrito_id;
     }
 }
