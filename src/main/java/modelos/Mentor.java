@@ -4,59 +4,66 @@ import java.io.Serializable;
 
 public class Mentor implements Serializable{
 	private static final long serialVersionUID = 1L;
-	private int idMentor;
+	private int id_mentor;
     private String curp;
     private String nombre;
     private int edad;
     private String puesto;
     private String especialidad;
-    private int tributoId;
+    private int tributo_id;
    
-    public int getIdMentor() {
-		return idMentor;
+    public Mentor(int id_mentor, String curp, String nombre, int edad, String puesto, String especialidad, int tributo_id) {
+        this.id_mentor = id_mentor;
+        this.curp = curp;
+        this.nombre = nombre;
+        this.edad = edad;
+        this.puesto = puesto;
+        this.especialidad = especialidad;
+        this.tributo_id = tributo_id;
+    }
+    public int getid_mentor() {
+		return id_mentor;
 	}
-	public void setIdMentor(int idMentor) {
-		this.idMentor = idMentor;
+	public void setid_mentor(int id_mentor) {
+		this.id_mentor = id_mentor;
 	}
-	public String getCurp() {
+	public String getcurp() {
 		return curp;
 	}
 	public void setCurp(String curp) {
 		this.curp = curp;
 	}
-	public String getNombre() {
+	public String getnombre() {
 		return nombre;
 	}
-	public void setNombre(String nombre) {
+	public void setnombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public int getEdad() {
+	public int getedad() {
 		return edad;
 	}
-	public void setEdad(int edad) {
+	public void setedad(int edad) {
 		this.edad = edad;
 	}
-	public String getPuesto() {
+	public String getpuesto() {
 		return puesto;
 	}
-	public void setPuesto(String puesto) {
+	public void setpuesto(String puesto) {
 		this.puesto = puesto;
 	}
-	public String getEspecialidad() {
+	public String getespecialidad() {
 		return especialidad;
 	}
-	public void setEspecialidad(String especialidad) {
+	public void setespecialidad(String especialidad) {
 		this.especialidad = especialidad;
 	}
-	public int getTributoId() {
-		return tributoId;
+	public int gettributo_id() {
+		return tributo_id;
 	}
-	public void setTributoId(int tributoId) {
-		this.tributoId = tributoId;
-	}
-	public static long getSerialversionuid() {
-		return serialVersionUID;
+	public void setTributoId(int tributo_id) {
+		this.tributo_id = tributo_id;
 	}
 	
+   
 
 }
