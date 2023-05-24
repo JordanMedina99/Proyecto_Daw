@@ -4,25 +4,27 @@ import java.io.Serializable;
 
 public class Dificultad implements Serializable {
     private static final long serialVersionUID = 1L;
-    private String idDificultad;
+    private String Id_Dificultad;
     private String descripcion;
 
-    public Dificultad() {
+    public Dificultad(String Id_Dificultad, String descripcion){
+    	 this.Id_Dificultad = Id_Dificultad;
+    	 this.descripcion = descripcion;
     }
 
-    public String getIdDificultad() {
-        return idDificultad;
+    public String getId_Dificultad() {
+        return Id_Dificultad;
     }
 
-    public void setIdDificultad(String idDificultad) {
-        this.idDificultad = idDificultad;
+    public void setId_Dificultad(String Id_Dificultad) {
+        this.Id_Dificultad = Id_Dificultad;
     }
 
-    public String getDescripcion() {
+    public String getdescripcion() {
         return descripcion;
     }
 
-    public void setDescripcion(String descripcion) {
+    public void setdescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
 }
