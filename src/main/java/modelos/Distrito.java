@@ -4,108 +4,119 @@ import java.io.Serializable;
 
 public class Distrito implements Serializable {
     private static final long serialVersionUID = 1L;
-    private int idDistrito;
+    private int id_distrito;
     private String nombre;
     private String especializacion;
-    private int puestosTrabajo;
-    private int juegosGanados;
-    private int cantidadHabitantes;
+    private int puestos_trabajo;
+    private int juegos_ganados;
+    private int cantidad_habitantes;
     private String ubicacion;
     private String clima;
-    private float porcentajeHombres;
-    private float porcentajeMujeres;
-    private String liderNombre;
+    private float porcentaje_hombres;
+    private float porcentaje_mujeres;
+    private String lider_nombre;
     
-    public Distrito() {
+    public Distrito(int id_distrito, String nombre, String especializacion, int puestos_trabajo, int juegos_ganados,int cantidad_habitantes, String ubicacion, String clima, float porcentaje_hombres,float porcentaje_mujeres, String lider_nombre){
+    	this.id_distrito = id_distrito;
+        this.nombre = nombre;
+        this.especializacion = especializacion;
+        this.puestos_trabajo = puestos_trabajo;
+        this.juegos_ganados = juegos_ganados;
+        this.cantidad_habitantes = cantidad_habitantes;
+        this.ubicacion = ubicacion;
+        this.clima = clima;
+        this.porcentaje_hombres = porcentaje_hombres;
+        this.porcentaje_mujeres = porcentaje_mujeres;
+        this.lider_nombre = lider_nombre;
         
     }
 
-    public int getIdDistrito() {
-        return idDistrito;
+    public int getid_distrito() {
+        return id_distrito;
     }
 
-    public void setIdDistrito(int idDistrito) {
-        this.idDistrito = idDistrito;
+    public void setid_distrito(int id_distrito) {
+        this.id_distrito = id_distrito;
     }
 
-    public String getNombre() {
+    public String getnombre() {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
+    public void setnombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public String getEspecializacion() {
+    public String getespecializacion() {
         return especializacion;
     }
 
-    public void setEspecializacion(String especializacion) {
+    public void setespecializacion(String especializacion) {
         this.especializacion = especializacion;
     }
 
-    public int getPuestosTrabajo() {
-        return puestosTrabajo;
+    public int getpuestos_trabajo() {
+        return puestos_trabajo;
     }
 
-    public void setPuestosTrabajo(int puestosTrabajo) {
-        this.puestosTrabajo = puestosTrabajo;
+    public void setpuestos_trabajo(int puestos_trabajo) {
+        this.puestos_trabajo = puestos_trabajo;
     }
 
-    public int getJuegosGanados() {
-        return juegosGanados;
+    public int getjuegos_ganados() {
+        return juegos_ganados;
     }
 
-    public void setJuegosGanados(int juegosGanados) {
-        this.juegosGanados = juegosGanados;
+    public void setjuegos_ganados(int juegos_ganados) {
+        this.juegos_ganados = juegos_ganados;
     }
 
-    public int getCantidadHabitantes() {
-        return cantidadHabitantes;
+    public int getcantidad_habitantes() {
+        return cantidad_habitantes;
     }
 
-    public void setCantidadHabitantes(int cantidadHabitantes) {
-        this.cantidadHabitantes = cantidadHabitantes;
+    public void setcantidad_habitantes(int cantidad_habitantes) {
+        this.cantidad_habitantes = cantidad_habitantes;
     }
 
-    public String getUbicacion() {
+    public String getubicacion() {
         return ubicacion;
     }
 
-    public void setUbicacion(String ubicacion) {
+    public void setubicacion(String ubicacion) {
         this.ubicacion = ubicacion;
     }
 
-    public String getClima() {
+    public String getclima() {
         return clima;
     }
 
-    public void setClima(String clima) {
+    public void setclima(String clima) {
         this.clima = clima;
     }
 
-    public float getPorcentajeHombres() {
-        return porcentajeHombres;
+    public float getporcentaje_hombres() {
+        return porcentaje_hombres;
     }
 
-    public void setPorcentajeHombres(float porcentajeHombres) {
-        this.porcentajeHombres = porcentajeHombres;
+    public void setporcentaje_hombres(float porcentaje_hombres) {
+        this.porcentaje_hombres = porcentaje_hombres;
     }
 
-    public float getPorcentajeMujeres() {
-        return porcentajeMujeres;
+    public float getporcentaje_mujeres() {
+        return porcentaje_mujeres;
     }
 
-    public void setPorcentajeMujeres(float porcentajeMujeres) {
-        this.porcentajeMujeres = porcentajeMujeres;
+    public void setporcentaje_mujeres(float porcentaje_mujeres) {
+        this.porcentaje_mujeres = porcentaje_mujeres;
     }
 
-    public String getLiderNombre() {
-        return liderNombre;
+    public String getlider_nombre() {
+        return lider_nombre;
     }
 
-    public void setLiderNombre(String liderNombre) {
-        this.liderNombre = liderNombre;
+    public void setlider_nombre(String lider_nombre) {
+        this.lider_nombre = lider_nombre;
     }
 }
 
