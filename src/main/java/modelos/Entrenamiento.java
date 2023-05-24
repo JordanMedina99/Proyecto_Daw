@@ -4,35 +4,38 @@ import java.io.Serializable;
 
 public class Entrenamiento implements Serializable {
     private static final long serialVersionUID = 1L;
-    private int idEntrenamiento;
-    private int tributoId;
-    private int pruebaId;
+    private int id_entrenamiento;
+    private int tributo_id;
+    private int prueba_id;
 
-    public Entrenamiento() {
+    public Entrenamiento(int id_entrenamiento, int tributo_id, int prueba_id){
+    	this.id_entrenamiento = id_entrenamiento;
+    	this.tributo_id = tributo_id;
+    	this.prueba_id = prueba_id;
     }
 
-    public int getIdEntrenamiento() {
-        return idEntrenamiento;
+    public int getid_entrenamiento() {
+        return id_entrenamiento;
     }
 
-    public void setIdEntrenamiento(int idEntrenamiento) {
-        this.idEntrenamiento = idEntrenamiento;
+    public void setid_entrenamiento(int id_entrenamiento) {
+        this.id_entrenamiento = id_entrenamiento;
     }
 
-    public int getTributoId() {
-        return tributoId;
+    public int gettributo_id() {
+        return tributo_id;
     }
 
-    public void setTributoId(int tributoId) {
-        this.tributoId = tributoId;
+    public void settributo_Id(int tributo_id) {
+        this.tributo_id = tributo_id;
     }
 
-    public int getPruebaId() {
-        return pruebaId;
+    public int getprueba_id() {
+        return prueba_id;
     }
 
-    public void setPruebaId(int pruebaId) {
-        this.pruebaId = pruebaId;
+    public void setprueba_id(int prueba_id) {
+        this.prueba_id = prueba_id;
     }
 }
 
