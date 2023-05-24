@@ -6,52 +6,57 @@ import java.sql.Time;
 
 public class Participacion implements Serializable {
     private static final long serialVersionUID = 1L;
-    private int idParticipacion;
+    private int id_participacion;
     private Date fecha;
-    private Time tiempoEmpleado;
-    private int tributoId;
-    private int pruebaId;
+    private Time tiempo_empleado;
+    private int tributo_id;
+    private int prueba_id;
 
-    public Participacion() {
+    public Participacion(int id_participacion, Date fecha, Time tiempo_empleado, int tributo_id, int prueba_id) {
+    	this.id_participacion = id_participacion;
+        this.fecha = fecha;
+        this.tiempo_empleado = tiempo_empleado;
+        this.tributo_id = tributo_id;
+        this.prueba_id = prueba_id;
     }
 
-    public int getIdParticipacion() {
-        return idParticipacion;
+    public int getid_participacion() {
+        return id_participacion;
     }
 
-    public void setIdParticipacion(int idParticipacion) {
-        this.idParticipacion = idParticipacion;
+    public void setid_participacion(int id_participacion) {
+        this.id_participacion = id_participacion;
     }
 
-    public Date getFecha() {
+    public Date getfecha() {
         return fecha;
     }
 
-    public void setFecha(Date fecha) {
+    public void setfecha(Date fecha) {
         this.fecha = fecha;
     }
 
-    public Time getTiempoEmpleado() {
-        return tiempoEmpleado;
+    public Time gettiempo_empleado() {
+        return tiempo_empleado;
     }
 
-    public void setTiempoEmpleado(Time tiempoEmpleado) {
-        this.tiempoEmpleado = tiempoEmpleado;
+    public void settiempo_empleado(Time tiempo_empleado) {
+        this.tiempo_empleado = tiempo_empleado;
     }
 
-    public int getTributoId() {
-        return tributoId;
+    public int gettributo_id() {
+        return tributo_id;
     }
 
-    public void setTributoId(int tributoId) {
-        this.tributoId = tributoId;
+    public void settributo_id(int tributo_id) {
+        this.tributo_id = tributo_id;
     }
 
-    public int getPruebaId() {
-        return pruebaId;
+    public int getprueba_id() {
+        return prueba_id;
     }
 
-    public void setPruebaId(int pruebaId) {
-        this.pruebaId = pruebaId;
+    public void setpruebaId(int prueba_id) {
+        this.prueba_id = prueba_id;
     }
 }
