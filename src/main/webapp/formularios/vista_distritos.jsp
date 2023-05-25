@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ page import="modelos.Distrito" %>
+<%@ page import = "java.util.*"%> 
+    
 
 <!DOCTYPE html>
 <html>
@@ -56,20 +59,46 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>Datos</td>
-        <td>Datos</td>
-        <td>Datos</td>
-        <td>Datos</td>
-        <td>Datos</td>
-        <td>Datos</td>
-        <td>Datos</td>
-        <td>Datos</td>
-        <td>Datos</td>
-        <td>Datos</td>
-        <td>Datos</td>
-      </tr>
-      <!-- Agrega más filas según sea necesario -->
+        <% 
+      List<?> distritosRaw = (List<?>) request.getAttribute("distritos");
+      List<Distrito> distritos = new ArrayList<>();
+      
+      /*
+      for (Object obj : distritosRaw) {
+          if (obj instanceof Distrito) {
+              distritos.add((Distrito) obj);
+          }
+      }
+      */
+      if (distritosRaw != null) {
+    	    for (Object obj : distritosRaw) {
+    	        if (obj instanceof Distrito) {
+    	            distritos.add((Distrito) obj);
+    	        }
+    	    }
+    	  }
+      
+      %>
+      
+     
+     
+
+
+      <% for (Distrito distritoItem : distritos) { %>
+            <tr>
+                <td><%= distritoItem.getid_distrito() %></td>
+                <td><%= distritoItem.getnombre() %></td>
+                <td><%= distritoItem.getespecializacion() %></td>
+                <td><%= distritoItem.getpuestos_trabajo() %></td>
+                <td><%= distritoItem.getjuegos_ganados() %></td>
+                <td><%= distritoItem.getcantidad_habitantes()%></td>
+                <td><%= distritoItem.getubicacion() %></td>
+                <td><%= distritoItem.getclima() %></td>
+                <td><%= distritoItem.getporcentaje_hombres() %></td>
+                <td><%= distritoItem.getporcentaje_mujeres() %></td>
+                <td><%= distritoItem.getlider_nombre() %></td>
+            </tr>
+        <% } %>
     </tbody>
   </table>
 </body>

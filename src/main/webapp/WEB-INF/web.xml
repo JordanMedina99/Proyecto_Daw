@@ -10,8 +10,18 @@
   	<description></description>
   	<servlet-class>controladores.LoginServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>VistaDistritosServlet</servlet-name>
+  	<display-name>VistaDistritosServlet</display-name>
+  	<description></description>
+  	<servlet-class>controladores.VistaDistritosServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>LoginServlet</servlet-name>
   	<url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>VistaDistritosServlet</servlet-name>
+  	<url-pattern>/VistaDistritosServlet</url-pattern>
   </servlet-mapping>
 </web-app>
