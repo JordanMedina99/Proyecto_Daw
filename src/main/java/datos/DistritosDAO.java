@@ -7,62 +7,49 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import modelos.Distrito;
 import conexion.Conexion;
+import modelos.Distrito;
 
 public class DistritosDAO {
-    private Connection conexion;
 
-    public DistritosDAO() throws ClassNotFoundException, SQLException {
-        conexion = Conexion.getConnection();
-    }
+	public List<Distrito> listarDistritos() throws ClassNotFoundException {
+	    Connection conn = null;
+	    PreparedStatement ps = null;
+	    ResultSet rs = null;
+	    List<Distrito> lista = new ArrayList<>();
 
-    public List<Distrito> listarDistritos() {
-        Connection conn = null;
-        PreparedStatement ps = null;
-        ResultSet rs = null;
-        List<Distrito> lista = new ArrayList<>();
+	    try {
+	        conn = Conexion.getConnection();
+	        ps = conn.prepareStatement("SELECT * FROM distrito");
+	        rs = ps.executeQuery();
+	        while (rs.next()) {
+	            int id_distrito = rs.getInt("id_distrito");
+	            String nombre = rs.getString("nombre");
+	            String especializacion = rs.getString("especializacion");
+	            int puestos_trabajo = rs.getInt("puestos_trabajo");
+	            int juegos_ganados = rs.getInt("juegos_ganados");
+	            int cantidad_habitantes = rs.getInt("cantidad_habitantes");
+	            String ubicacion = rs.getString("ubicacion");
+	            String clima = rs.getString("clima");
+	            float porcentaje_hombres = rs.getFloat("porcentaje_hombres");
+	            float porcentaje_mujeres = rs.getFloat("porcentaje_mujeres");
+	            String lider_nombre = rs.getString("lider_nombre");
 
-        try {
-            conn = conexion;
-            ps = conn.prepareStatement("SELECT * FROM distrito");
-            rs = ps.executeQuery();
-            while (rs.next()) {
-                int id_distrito = rs.getInt("id_distrito");
-                String nombre = rs.getString("nombre");
-                String especializacion = rs.getString("especializacion");
-                int puestos_trabajo = rs.getInt("puestos_trabajo");
-                int juegos_ganados = rs.getInt("juegos_ganados");
-                int cantidad_habitantes = rs.getInt("cantidad_habitantes");
-                String ubicacion = rs.getString("ubicacion");
-                String clima = rs.getString("clima");
-                float porcentaje_hombres = rs.getFloat("porcentaje_hombres");
-                float porcentaje_mujeres = rs.getFloat("porcentaje_mujeres");
-                String lider_nombre = rs.getString("lider_nombre");
+	            Distrito distrito = new Distrito(id_distrito, nombre, especializacion, puestos_trabajo, juegos_ganados,
+	                    cantidad_habitantes, ubicacion, clima, porcentaje_hombres, porcentaje_mujeres, lider_nombre);
+	            lista.add(distrito);
+	        }
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	    } finally {
+	        Conexion.close(rs);
+	        Conexion.close(ps);
+	        Conexion.close(conn);
+	    }
 
-                Distrito distrito = new Distrito(id_distrito, nombre, especializacion, puestos_trabajo, juegos_ganados,
-                        cantidad_habitantes, ubicacion, clima, porcentaje_hombres, porcentaje_mujeres, lider_nombre);
-                lista.add(distrito);
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                if (rs != null) {
-                    rs.close();
-                }
-                if (ps != null) {
-                    ps.close();
-                }
-                if (conn != null) {
-                    conn.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
+	    return lista;
+	}
 
-        return lista;
-    }
 }
+
 

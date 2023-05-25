@@ -72,7 +72,7 @@
   
   <main>
     <div class="button-container">
-      <a href="formularios/vista_distritos.jsp" class="button">Distritos</a>
+      <a href="VistaDistritosServlet" class="button">Distritos</a>
       <a href="pagina2.html" class="button">Tributos</a>
       <a href="pagina3.html" class="button">Posiciones</a>
       <a href="pagina4.html" class="button">Ganadores</a>

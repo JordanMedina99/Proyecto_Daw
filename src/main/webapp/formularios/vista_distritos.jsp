@@ -1,8 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page import="modelos.Distrito" %>
-<%@ page import = "java.util.*"%> 
-    
+<%@ page import="java.util.*" %>
 
 <!DOCTYPE html>
 <html>
@@ -40,11 +39,14 @@
   </style>
 </head>
 <body>
-  <img src="../images/logo_capitolio.png" alt="Logo"> <!-- Cambia "ruta-a-tu-imagen.jpg" por la ruta de tu imagen -->
-
+  <img src="images/logo_capitolio.png" alt="Logo"> <!-- Cambia "ruta-a-tu-imagen.jpg" por la ruta de tu imagen -->
+    
+   <h1>esta es la tabla de distritos existentes</h1>
+    
   <table>
     <thead>
-      <tr>
+    
+       <tr>
         <th>id_distrito</th>
         <th>nombre</th>
         <th>especializacion</th>
@@ -54,52 +56,38 @@
         <th>ubicacion</th>
         <th>clima</th>
         <th>porcentaje_hombres</th>
-        <th>porcentajes_mujeres</th>
+        <th>porcentaje_mujeres</th>
         <th>lider_nombre</th>
       </tr>
     </thead>
     <tbody>
-        <% 
-      List<?> distritosRaw = (List<?>) request.getAttribute("distritos");
-      List<Distrito> distritos = new ArrayList<>();
-      
-      /*
-      for (Object obj : distritosRaw) {
-          if (obj instanceof Distrito) {
-              distritos.add((Distrito) obj);
-          }
-      }
-      */
-      if (distritosRaw != null) {
-    	    for (Object obj : distritosRaw) {
-    	        if (obj instanceof Distrito) {
-    	            distritos.add((Distrito) obj);
-    	        }
-    	    }
-    	  }
-      
+      <% 
+      @SuppressWarnings("unchecked")
+      List<Distrito> distritos = (List<Distrito>) request.getAttribute("distritos");
+        if (distritos != null) {
+          for (Distrito distrito : distritos) {
       %>
-      
-     
-     
-
-
-      <% for (Distrito distritoItem : distritos) { %>
-            <tr>
-                <td><%= distritoItem.getid_distrito() %></td>
-                <td><%= distritoItem.getnombre() %></td>
-                <td><%= distritoItem.getespecializacion() %></td>
-                <td><%= distritoItem.getpuestos_trabajo() %></td>
-                <td><%= distritoItem.getjuegos_ganados() %></td>
-                <td><%= distritoItem.getcantidad_habitantes()%></td>
-                <td><%= distritoItem.getubicacion() %></td>
-                <td><%= distritoItem.getclima() %></td>
-                <td><%= distritoItem.getporcentaje_hombres() %></td>
-                <td><%= distritoItem.getporcentaje_mujeres() %></td>
-                <td><%= distritoItem.getlider_nombre() %></td>
-            </tr>
-        <% } %>
+      <tr>
+       <td><%= distrito.getid_distrito() %></td>
+       <td><%= distrito.getnombre() %></td>
+       <td><%= distrito.getespecializacion() %></td>
+       <td><%= distrito.getpuestos_trabajo() %></td>
+       <td><%= distrito.getjuegos_ganados() %></td>
+       <td><%= distrito.getcantidad_habitantes() %></td>
+       <td><%= distrito.getubicacion() %></td>
+       <td><%= distrito.getclima() %></td>
+       <td><%= distrito.getporcentaje_hombres() %></td>
+       <td><%= distrito.getporcentaje_mujeres() %></td>
+       <td><%= distrito.getlider_nombre() %></td>
+       </tr>
+      <% 
+          }
+        }
+      %>
     </tbody>
   </table>
 </body>
 </html>
+
+
+
