@@ -42,6 +42,10 @@
   <img src="images/logo_capitolio.png" alt="Logo"> <!-- Cambia "ruta-a-tu-imagen.jpg" por la ruta de tu imagen -->
     
    <h1>esta es la tabla de distritos existentes</h1>
+   
+   <button type="button" onclick="location.href='../ingresar.jsp'">Ingresar</button>
+   <button type="button" onclick="location.href='actualizar.jsp'">Actualizar</button>
+   <button type="button" onclick="location.href='eliminar.jsp'">Eliminar</button>
     
   <table>
     <thead>
