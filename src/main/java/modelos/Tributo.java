@@ -12,6 +12,7 @@ public class Tributo implements Serializable {
     private String habilidad;
     private int espectaculo_puntuacion;
     private int distrito_id;
+    //private Distrito distrito; // Nuevo atributo Distrito
 
     public Tributo(int id_tributo, String curp, String nombre, String sexo, int edad, String habilidad, int espectaculo_puntuacion, int distrito_id){
     	this.id_tributo = id_tributo;
@@ -87,4 +88,13 @@ public class Tributo implements Serializable {
     public void setdistrito_id(int distrito_id) {
         this.distrito_id = distrito_id;
     }
+    /*
+    public Distrito getDistrito() {
+        return distrito;
+    }
+
+    public void setDistrito(Distrito distrito) {
+        this.distrito = distrito;
+    }
+    */
 }

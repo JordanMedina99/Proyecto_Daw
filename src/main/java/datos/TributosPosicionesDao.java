@@ -8,49 +8,44 @@ import java.util.ArrayList;
 import java.util.List;
 
 import modelos.Tributo;
-import modelos.Distrito;
 import conexion.Conexion;
 
 public class TributosPosicionesDao {
-	
-	  public List<Tributo> obtenerTributosConDistritos() throws ClassNotFoundException {
-	        List<Tributo> tributos = new ArrayList<>();
 
-	        Connection conn = null;
-	        PreparedStatement ps = null;
-	        ResultSet rs = null;
+	public List<Tributo> obtenerTributosConDistritos() throws ClassNotFoundException {
+        List<Tributo> tributos = new ArrayList<>();
 
-	        try {
-	            conn = Conexion.getConnection();
-	            ps = conn.prepareStatement("SELECT t.nombre, d.nombre AS distrito_nombre " +
-	                    "FROM tributo t " +
-	                    "LEFT JOIN puntuacion p ON t.id_tributo = p.tributo_id " +
-	                    "LEFT JOIN distrito d ON t.distrito_id = d.id_distrito " +
-	                    "GROUP BY t.nombre, d.nombre " +
-	                    "ORDER BY MAX(p.valor) DESC, t.nombre ASC");
-	            rs = ps.executeQuery();
+        Connection conn = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
 
-	            while (rs.next()) {
-	            	String nombreTributo = rs.getString("nombre");
-	            	String nombreDistrito = rs.getString("distrito_nombre");
+        try {
+            conn = Conexion.getConnection();
+            ps = conn.prepareStatement("SELECT t.nombre, t.edad, t.distrito_id " +
+                    "FROM tributo t " +
+                    "LEFT JOIN puntuacion p ON t.id_tributo = p.tributo_id " +
+                    "LEFT JOIN distrito d ON t.distrito_id = d.id_distrito " +
+                    "GROUP BY t.nombre, t.edad, t.distrito_id " +
+                    "ORDER BY MAX(p.valor) DESC, t.nombre ASC");
+            rs = ps.executeQuery();
 
-	            	Tributo tributo = new Tributo(0, "", nombreTributo, "", 0, "", 0, 0);
-	            	Distrito distrito = new Distrito(0, nombreDistrito, "", 0, 0, 0, "", "", 0, 0, "");
+            while (rs.next()) {
+                String nombreTributo = rs.getString("nombre");
+                int edadTributo = rs.getInt("edad");
+                int distritoId = rs.getInt("distrito_id");
 
-	            	tributo.setdistrito_id(distrito.getid_distrito());
+                Tributo tributo = new Tributo(0, "", nombreTributo, "", edadTributo, "", 0, distritoId);
+                tributos.add(tributo);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            Conexion.close(rs);
+            Conexion.close(ps);
+            Conexion.close(conn);
+        }
 
-
-	                tributos.add(tributo);
-	            }
-	        } catch (SQLException e) {
-	            e.printStackTrace();
-	        } finally {
-	            Conexion.close(rs);
-	            Conexion.close(ps);
-	            Conexion.close(conn);
-	        }
-
-	        return tributos;
-	    }
-       
+        return tributos;
+    }
 }
+
