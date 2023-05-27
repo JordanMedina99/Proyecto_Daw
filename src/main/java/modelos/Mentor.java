@@ -30,7 +30,7 @@ public class Mentor implements Serializable{
 	public String getcurp() {
 		return curp;
 	}
-	public void setCurp(String curp) {
+	public void setcurp(String curp) {
 		this.curp = curp;
 	}
 	public String getnombre() {
@@ -60,7 +60,7 @@ public class Mentor implements Serializable{
 	public int gettributo_id() {
 		return tributo_id;
 	}
-	public void setTributoId(int tributo_id) {
+	public void settributo_id(int tributo_id) {
 		this.tributo_id = tributo_id;
 	}
 	
