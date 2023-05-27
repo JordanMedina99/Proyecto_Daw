@@ -70,6 +70,12 @@
   	<description></description>
   	<servlet-class>controladores.VistaMentoresServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>IngresarMentoresServlet</servlet-name>
+  	<display-name>IngresarMentoresServlet</display-name>
+  	<description></description>
+  	<servlet-class>controladores.IngresarMentoresServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>LoginServlet</servlet-name>
   	<url-pattern>/LoginServlet</url-pattern>
@@ -113,5 +119,9 @@
   <servlet-mapping>
   	<servlet-name>VistaMentoresServlet</servlet-name>
   	<url-pattern>/VistaMentoresServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>IngresarMentoresServlet</servlet-name>
+  	<url-pattern>/IngresarMentoresServlet</url-pattern>
   </servlet-mapping>
 </web-app>
