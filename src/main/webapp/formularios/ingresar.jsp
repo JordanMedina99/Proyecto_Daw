@@ -9,44 +9,48 @@
 <body>
   <h1>Ingresar Distrito</h1>
 
-  <form action="ingresarServlet" method="post">
-    <label for="id_distrito">ID Distrito:</label>
-    <input type="text" name="id_distrito" id="id_distrito" required>
+  <form action="../IngresarDistritosServlet" method="post">
+    <label for="id_distrito">id_distrito:</label>
+    <input type="number" name="id_distrito" id="id_distrito" required>
     <br>
 
-    <label for="nombre">Nombre:</label>
+    <label for="nombre">nombre:</label>
     <input type="text" name="nombre" id="nombre" required>
     <br>
 
-    <label for="especializacion">Especialización:</label>
+    <label for="especializacion">especializacion:</label>
     <input type="text" name="especializacion" id="especializacion" required>
     <br>
 
-    <label for="puestos_trabajo">Puestos de Trabajo:</label>
-    <input type="text" name="puestos_trabajo" id="puestos_trabajo" required>
+    <label for="puestos_trabajo">puestos_trabajo:</label>
+    <input type="number" name="puestos_trabajo" id="puestos_trabajo" required>
+    <br>
+    
+    <label for="juegos_ganados">juegos_ganados:</label>
+    <input type="number" name="juegos_ganados" id="juegos_ganados" required>
     <br>
 
-    <label for="cantidad_habitantes">Cantidad de Habitantes:</label>
-    <input type="text" name="cantidad_habitantes" id="cantidad_habitantes" required>
+    <label for="cantidad_habitantes">cantidad_habitantes:</label>
+    <input type="number" name="cantidad_habitantes" id="cantidad_habitantes" required>
     <br>
 
-    <label for="ubicacion">Ubicación:</label>
+    <label for="ubicacion">ubicacion:</label>
     <input type="text" name="ubicacion" id="ubicacion" required>
     <br>
 
-    <label for="clima">Clima:</label>
+    <label for="clima">clima:</label>
     <input type="text" name="clima" id="clima" required>
     <br>
 
-    <label for="porcentaje_hombres">Porcentaje de Hombres:</label>
-    <input type="text" name="porcentaje_hombres" id="porcentaje_hombres" required>
+    <label for="porcentaje_hombres">porcentaje_hombres:</label>
+    <input type="number" name="porcentaje_hombres" id="porcentaje_hombres" step="0.01" required>
     <br>
 
-    <label for="porcentaje_mujeres">Porcentaje de Mujeres:</label>
-    <input type="text" name="porcentaje_mujeres" id="porcentaje_mujeres" required>
+    <label for="porcentaje_mujeres">porcentaje_mujeres:</label>
+    <input type="number" name="porcentaje_mujeres" id="porcentaje_mujeres" step="0.01" required>
     <br>
 
-    <label for="lider_nombre">Nombre del Líder:</label>
+    <label for="lider_nombre">lider_nombre:</label>
     <input type="text" name="lider_nombre" id="lider_nombre" required>
     <br>
 
