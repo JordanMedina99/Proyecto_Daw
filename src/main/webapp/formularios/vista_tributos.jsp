@@ -72,8 +72,8 @@
    <h1>esta es la tabla de tributos existentes</h1>
   <div class="button-container"> 
   <a href="formularios/ingresar_tributos.jsp" class="button">Ingresar</a>
-  <a href="formularios/actualizar_distritos.jsp" class="button">Modificar</a>
-  <a href="formularios/eliminar_distritos.jsp" class="button">Eliminar</a>
+  <a href="formularios/actualizar_tributos.jsp" class="button">Modificar</a>
+  <a href="formularios/eliminar_tributos.jsp" class="button">Eliminar</a>
   </div>
   
   <table>

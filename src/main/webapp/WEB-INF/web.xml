@@ -52,6 +52,12 @@
   	<description></description>
   	<servlet-class>controladores.ActualizarTributosServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>EliminarTributoServlet</servlet-name>
+  	<display-name>EliminarTributoServlet</display-name>
+  	<description></description>
+  	<servlet-class>controladores.EliminarTributoServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>LoginServlet</servlet-name>
   	<url-pattern>/LoginServlet</url-pattern>
@@ -83,5 +89,9 @@
   <servlet-mapping>
   	<servlet-name>ActualizarTributosServlet</servlet-name>
   	<url-pattern>/ActualizarTributosServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EliminarTributoServlet</servlet-name>
+  	<url-pattern>/EliminarTributoServlet</url-pattern>
   </servlet-mapping>
 </web-app>
