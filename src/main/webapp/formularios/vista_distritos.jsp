@@ -72,7 +72,7 @@
    <h1>esta es la tabla de distritos existentes</h1>
   <div class="button-container"> 
   <a href="formularios/ingresar.jsp" class="button">Ingresar</a>
-  <a href="actualizar.jsp" class="button">Modificar</a>
+  <a href="formularios/actualizar_distritos.jsp" class="button">Modificar</a>
   <a href="eliminar.jsp" class="button">Eliminar</a>
   </div>
   
