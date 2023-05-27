@@ -56,7 +56,7 @@ public class Tributo implements Serializable {
         this.sexo = sexo;
     }
 
-    public int getEdad() {
+    public int getedad() {
         return edad;
     }
 

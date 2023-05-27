@@ -73,7 +73,7 @@
   <main>
     <div class="button-container">
       <a href="VistaDistritosServlet" class="button">Distritos</a>
-      <a href="pagina2.html" class="button">Tributos</a>
+      <a href="VistaTributosServlet" class="button">Tributos</a>
       <a href="pagina3.html" class="button">Posiciones</a>
       <a href="pagina4.html" class="button">Ganadores</a>
       <a href="pagina5.html" class="button">Mentores</a>
