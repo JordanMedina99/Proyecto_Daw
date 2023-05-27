@@ -28,6 +28,12 @@
   	<description></description>
   	<servlet-class>controladores.ActualizarDistritosServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>EliminarDistritosServlet</servlet-name>
+  	<display-name>EliminarDistritosServlet</display-name>
+  	<description></description>
+  	<servlet-class>controladores.EliminarDistritosServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>LoginServlet</servlet-name>
   	<url-pattern>/LoginServlet</url-pattern>
@@ -43,5 +49,9 @@
   <servlet-mapping>
   	<servlet-name>ActualizarDistritosServlet</servlet-name>
   	<url-pattern>/ActualizarDistritosServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EliminarDistritosServlet</servlet-name>
+  	<url-pattern>/EliminarDistritosServlet</url-pattern>
   </servlet-mapping>
 </web-app>

@@ -105,14 +105,14 @@ public class DistritosDAO {
 	        }
 	    }
 
-	    public void eliminarDistrito(int idDistrito) throws ClassNotFoundException {
+	    public void eliminarDistrito(int id_distrito) throws ClassNotFoundException {
 	        Connection conn = null;
 	        PreparedStatement ps = null;
 
 	        try {
 	            conn = Conexion.getConnection();
 	            ps = conn.prepareStatement("DELETE FROM distrito WHERE id_distrito=?");
-	            ps.setInt(1, idDistrito);
+	            ps.setInt(1, id_distrito);
 	            
 	            ps.executeUpdate();
 	        } catch (SQLException e) {
