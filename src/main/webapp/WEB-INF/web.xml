@@ -40,6 +40,18 @@
   	<description></description>
   	<servlet-class>controladores.VistaTributosServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>IngresarTributosServlet</servlet-name>
+  	<display-name>IngresarTributosServlet</display-name>
+  	<description></description>
+  	<servlet-class>controladores.IngresarTributosServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ActualizarTributosServlet</servlet-name>
+  	<display-name>ActualizarTributosServlet</display-name>
+  	<description></description>
+  	<servlet-class>controladores.ActualizarTributosServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>LoginServlet</servlet-name>
   	<url-pattern>/LoginServlet</url-pattern>
@@ -63,5 +75,13 @@
   <servlet-mapping>
   	<servlet-name>VistaTributosServlet</servlet-name>
   	<url-pattern>/VistaTributosServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>IngresarTributosServlet</servlet-name>
+  	<url-pattern>/IngresarTributosServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ActualizarTributosServlet</servlet-name>
+  	<url-pattern>/ActualizarTributosServlet</url-pattern>
   </servlet-mapping>
 </web-app>
