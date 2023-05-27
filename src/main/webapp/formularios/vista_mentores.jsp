@@ -72,7 +72,7 @@
    <h1>Esta es la tabla de mentores existentes</h1>
   <div class="button-container"> 
   <a href="formularios/ingresar_mentores.jsp" class="button">Ingresar</a>
-  <a href="formularios/actualizar_mentores.jsp" class="button">Modificar</a>
+  <a href="formularios/modificar_mentor.jsp" class="button">Modificar</a>
   <a href="formularios/eliminar_mentores.jsp" class="button">Eliminar</a>
   </div>
   
