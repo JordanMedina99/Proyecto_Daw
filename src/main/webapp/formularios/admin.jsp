@@ -75,7 +75,7 @@
       <a href="VistaDistritosServlet" class="button">Distritos</a>
       <a href="VistaTributosServlet" class="button">Tributos</a>
       <a href="VistaPosicionesServlet" class="button">Posiciones</a>
-      <a href="pagina4.html" class="button">Vigilantes</a>
+      <a href="VistaVigilantesServlet" class="button">Vigilantes</a>
       <a href="VistaMentoresServlet" class="button">Mentores</a>
       <a href="VistaPruebasServlet" class="button">Pruebas</a>
     </div>
