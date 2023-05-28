@@ -136,6 +136,12 @@
   	<description></description>
   	<servlet-class>controladores.EliminarVigilantesServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>VistaVigilantesUserVigilanteServlet</servlet-name>
+  	<display-name>VistaVigilantesUserVigilanteServlet</display-name>
+  	<description></description>
+  	<servlet-class>controladores.VistaVigilantesUserVigilanteServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>LoginServlet</servlet-name>
   	<url-pattern>/LoginServlet</url-pattern>
@@ -223,5 +229,9 @@
   <servlet-mapping>
   	<servlet-name>EliminarVigilantesServlet</servlet-name>
   	<url-pattern>/EliminarVigilantesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>VistaVigilantesUserVigilanteServlet</servlet-name>
+  	<url-pattern>/VistaVigilantesUserVigilanteServlet</url-pattern>
   </servlet-mapping>
 </web-app>

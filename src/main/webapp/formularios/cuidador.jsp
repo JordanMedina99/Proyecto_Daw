@@ -72,7 +72,7 @@
   
   <main>
     <div class="button-container">
-      <a href="VistaDistritosServlet" class="button">Vigilantes</a>
+      <a href="VistaVigilantesServlet" class="button">Vigilantes</a>
       <a href="VistaTributosServlet" class="button">Pruebas</a>
       <a href="VistaTributosServlet" class="button">Puntuacion</a>
     </div>
