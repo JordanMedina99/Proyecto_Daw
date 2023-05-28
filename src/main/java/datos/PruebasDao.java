@@ -53,13 +53,14 @@ public class PruebasDao {
 
         try {
             conn = Conexion.getConnection();
-            ps = conn.prepareStatement("INSERT INTO prueba (codigo, nombre, tipo, dificultad_id, vencedor_id, tiempo_empleado) VALUES (?, ?, ?, ?, ?, ?)");
-            ps.setString(1, prueba.getcodigo());
-            ps.setString(2, prueba.getnombre());
-            ps.setString(3, prueba.gettipo());
-            ps.setString(4, prueba.getdificultad_id());
-            ps.setInt(5, prueba.getvencedor_id());
-            ps.setTime(6, prueba.gettiempo_empleado());
+            ps = conn.prepareStatement("INSERT INTO prueba (id_prueba, codigo, nombre, tipo, dificultad_id, vencedor_id, tiempo_empleado) VALUES (?, ?, ?, ?, ?, ?, ?)");
+            ps.setInt(1, prueba.getid_prueba());
+            ps.setString(2, prueba.getcodigo());
+            ps.setString(3, prueba.getnombre());
+            ps.setString(4, prueba.gettipo());
+            ps.setString(5, prueba.getdificultad_id());
+            ps.setInt(6, prueba.getvencedor_id());
+            ps.setTime(7, prueba.gettiempo_empleado());
 
             ps.executeUpdate();
         } catch (SQLException e) {
@@ -76,14 +77,15 @@ public class PruebasDao {
 
         try {
             conn = Conexion.getConnection();
-            ps = conn.prepareStatement("UPDATE prueba SET codigo=?, nombre=?, tipo=?, dificultad_id=?, vencedor_id=?, tiempo_empleado=? WHERE id_prueba=?");
-            ps.setString(1, prueba.getcodigo());
-            ps.setString(2, prueba.getnombre());
-            ps.setString(3, prueba.gettipo());
-            ps.setString(4, prueba.getdificultad_id());
-            ps.setInt(5, prueba.getvencedor_id());
-            ps.setTime(6, prueba.gettiempo_empleado());
-            ps.setInt(7, prueba.getid_prueba());
+            ps = conn.prepareStatement("UPDATE prueba SET id_prueba=?, codigo=?, nombre=?, tipo=?, dificultad_id=?, vencedor_id=?, tiempo_empleado=? WHERE id_prueba=?");
+            ps.setInt(1, prueba.getid_prueba());
+            ps.setString(2, prueba.getcodigo());
+            ps.setString(3, prueba.getnombre());
+            ps.setString(4, prueba.gettipo());
+            ps.setString(5, prueba.getdificultad_id());
+            ps.setInt(6, prueba.getvencedor_id());
+            ps.setTime(7, prueba.gettiempo_empleado());
+            ps.setInt(8, prueba.getid_prueba());
 
             ps.executeUpdate();
         } catch (SQLException e) {

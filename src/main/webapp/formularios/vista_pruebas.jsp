@@ -72,7 +72,7 @@
    <h1>Esta es la tabla de pruebas existentes</h1>
   <div class="button-container"> 
   <a href="formularios/ingresar_pruebas.jsp" class="button">Ingresar</a>
-  <a href="formularios/modificar_prueba.jsp" class="button">Modificar</a>
+  <a href="formularios/actualizar_pruebas.jsp" class="button">Modificar</a>
   <a href="formularios/eliminar_pruebas.jsp" class="button">Eliminar</a>
   </div>
   
