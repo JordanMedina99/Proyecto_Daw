@@ -80,7 +80,8 @@ public class VigilantesDao {
             ps.setString(4, vigilante.getsexo());
             ps.setInt(5, vigilante.getedad());
             ps.setString(6, vigilante.getpuesto());
-          
+            ps.setInt(7, vigilante.getid_vigilante()); 
+
             ps.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -89,7 +90,6 @@ public class VigilantesDao {
             Conexion.close(conn);
         }
     }
-
     public void eliminarVigilante(int id_vigilante) throws ClassNotFoundException {
         Connection conn = null;
         PreparedStatement ps = null;

@@ -118,6 +118,24 @@
   	<description></description>
   	<servlet-class>controladores.VistaVigilantesServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>IngresarVigilantesServlet</servlet-name>
+  	<display-name>IngresarVigilantesServlet</display-name>
+  	<description></description>
+  	<servlet-class>controladores.IngresarVigilantesServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ActualizarVigilantesServlet</servlet-name>
+  	<display-name>ActualizarVigilantesServlet</display-name>
+  	<description></description>
+  	<servlet-class>controladores.ActualizarVigilantesServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>EliminarVigilantesServlet</servlet-name>
+  	<display-name>EliminarVigilantesServlet</display-name>
+  	<description></description>
+  	<servlet-class>controladores.EliminarVigilantesServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>LoginServlet</servlet-name>
   	<url-pattern>/LoginServlet</url-pattern>
@@ -193,5 +211,17 @@
   <servlet-mapping>
   	<servlet-name>VistaVigilantesServlet</servlet-name>
   	<url-pattern>/VistaVigilantesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>IngresarVigilantesServlet</servlet-name>
+  	<url-pattern>/IngresarVigilantesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ActualizarVigilantesServlet</servlet-name>
+  	<url-pattern>/ActualizarVigilantesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EliminarVigilantesServlet</servlet-name>
+  	<url-pattern>/EliminarVigilantesServlet</url-pattern>
   </servlet-mapping>
 </web-app>
