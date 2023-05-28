@@ -88,6 +88,12 @@
   	<description></description>
   	<servlet-class>controladores.EliminarMentoresServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>VistaPruebasServlet</servlet-name>
+  	<display-name>VistaPruebasServlet</display-name>
+  	<description></description>
+  	<servlet-class>controladores.VistaPruebasServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>LoginServlet</servlet-name>
   	<url-pattern>/LoginServlet</url-pattern>
@@ -143,5 +149,9 @@
   <servlet-mapping>
   	<servlet-name>EliminarMentoresServlet</servlet-name>
   	<url-pattern>/EliminarMentoresServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>VistaPruebasServlet</servlet-name>
+  	<url-pattern>/VistaPruebasServlet</url-pattern>
   </servlet-mapping>
 </web-app>

@@ -77,7 +77,7 @@
       <a href="VistaPosicionesServlet" class="button">Posiciones</a>
       <a href="pagina4.html" class="button">Ganadores</a>
       <a href="VistaMentoresServlet" class="button">Mentores</a>
-      <a href="pagina6.html" class="button">Puntuacion espectaculo</a>
+      <a href="pagina6.html" class="button">Pruebas</a>
     </div>
   </main>
   

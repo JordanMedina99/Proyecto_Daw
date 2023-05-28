@@ -20,13 +20,14 @@ public class ModificarMentoresServlet extends HttpServlet {
             int id_mentor = Integer.parseInt(request.getParameter("id_mentor"));
             String curp = request.getParameter("curp");
             String nombre = request.getParameter("nombre");
+            String sexo = request.getParameter("sexo");
             int edad = Integer.parseInt(request.getParameter("edad"));
             String puesto = request.getParameter("puesto");
             String especialidad = request.getParameter("especialidad");
             int tributo_id = Integer.parseInt(request.getParameter("tributo_id"));
 
             // Crear un objeto Mentor con los datos actualizados
-            Mentor mentor = new Mentor(id_mentor, curp, nombre, edad, puesto, especialidad, tributo_id);
+            Mentor mentor = new Mentor(id_mentor, curp, nombre, sexo, edad, puesto, especialidad, tributo_id);
 
             // Crear una instancia de MentoresDao para realizar la actualización
             MentoresDao mentoresDao = new MentoresDao();

@@ -20,6 +20,10 @@
     <label for="nombre">nombre:</label>
     <input type="text" name="nombre" id="nombre" required>
     <br>
+    
+    <label for="sexo">sexo:</label>
+    <input type="text" name="sexo" id="sexo" required>
+    <br>
 
     <label for="edad">edad:</label>
     <input type="number" name="edad" id="edad" required>

@@ -82,6 +82,7 @@
         <th>id_mentor</th>
         <th>curp</th>
         <th>nombre</th>
+        <th>sexo</th>
         <th>edad</th>
         <th>puesto</th>
         <th>especialidad</th>
@@ -100,6 +101,7 @@
     <td><%= mentor.getid_mentor() %></td>
     <td><%= mentor.getcurp() %></td>
     <td><%= mentor.getnombre() %></td>
+    <td><%= mentor.getsexo() %></td>
     <td><%= mentor.getedad() %></td>
     <td><%= mentor.getpuesto() %></td>
     <td><%= mentor.getespecialidad() %></td>
