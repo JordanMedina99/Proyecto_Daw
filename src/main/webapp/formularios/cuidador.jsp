@@ -72,8 +72,8 @@
   
   <main>
     <div class="button-container">
-      <a href="VistaVigilantesServlet" class="button">Vigilantes</a>
-      <a href="VistaTributosServlet" class="button">Pruebas</a>
+      <a href="VistaVigilantesUserVigilanteServlet" class="button">Vigilantes</a>
+      <a href="VistaPruebasServlet" class="button">Pruebas</a>
       <a href="VistaTributosServlet" class="button">Puntuacion</a>
     </div>
   </main>
