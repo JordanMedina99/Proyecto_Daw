@@ -142,6 +142,12 @@
   	<description></description>
   	<servlet-class>controladores.VistaVigilantesUserVigilanteServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>VistaPruebasUserVigilante</servlet-name>
+  	<display-name>VistaPruebasUserVigilante</display-name>
+  	<description></description>
+  	<servlet-class>controladores.VistaPruebasUserVigilante</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>LoginServlet</servlet-name>
   	<url-pattern>/LoginServlet</url-pattern>
@@ -233,5 +239,9 @@
   <servlet-mapping>
   	<servlet-name>VistaVigilantesUserVigilanteServlet</servlet-name>
   	<url-pattern>/VistaVigilantesUserVigilanteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>VistaPruebasUserVigilante</servlet-name>
+  	<url-pattern>/VistaPruebasUserVigilante</url-pattern>
   </servlet-mapping>
 </web-app>
