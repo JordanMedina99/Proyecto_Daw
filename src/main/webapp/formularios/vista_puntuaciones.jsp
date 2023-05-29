@@ -72,7 +72,7 @@
    <h1>Esta es la tabla de puntuaciones existentes</h1>
   <div class="button-container"> 
   <a href="formularios/ingresar_puntuaciones.jsp" class="button">Ingresar</a>
-  <a href="formularios/modificar.jsp" class="button">Modificar</a>
+  <a href="formularios/actualizar_puntuaciones.jsp" class="button">Modificar</a>
   <a href="formularios/eliminar.jsp" class="button">Eliminar</a>
   </div>
   
