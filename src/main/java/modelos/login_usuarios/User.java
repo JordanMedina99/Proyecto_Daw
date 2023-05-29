@@ -46,7 +46,7 @@ public class User {
     userList.add(new User("presidente", "cornelius", "admin"));
     userList.add(new User("vigilante", "aguila", "cuidador"));
     userList.add(new User("mentor", "sasuke", "mentor"));
-    userList.add(new User("tributos", "cuidador", "vigilante"));
+    userList.add(new User("tributos", "cuidador", "tributo"));
     // Agregar más usuarios si es necesario
     return userList;
   }
