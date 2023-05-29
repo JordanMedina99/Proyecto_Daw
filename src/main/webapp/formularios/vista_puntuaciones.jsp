@@ -1,6 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page import="modelos.Vigilante" %>
+<%@ page import="modelos.Puntuacion" %>
 <%@ page import="java.util.*" %>
 
 <!DOCTYPE html>
@@ -50,7 +50,7 @@
     
     th, td {
       padding: 8px; /* Espaciado interno de celda */
-      text-align: left; /* AlineaciÃ³n del texto a la izquierda */
+      text-align: left; /* Alineación del texto a la izquierda */
       border-bottom: 1px solid #ddd; /* Borde inferior de celda */
     }
 
@@ -69,38 +69,39 @@
 <body>
   <img src="images/logo_capitolio.png" alt="Logo"> <!-- Cambia "ruta-a-tu-imagen.jpg" por la ruta de tu imagen -->
     
-   <h1>Esta es la tabla de vigilantes existentes</h1>
- 
+   <h1>Esta es la tabla de puntuaciones existentes</h1>
+  <div class="button-container"> 
+  <a href="formularios/ingresare.jsp" class="button">Ingresar</a>
+  <a href="formularios/modificar.jsp" class="button">Modificar</a>
+  <a href="formularios/eliminar.jsp" class="button">Eliminar</a>
+  </div>
+  
   <table>
     <thead>
       <tr>
-        <th>id_prueba</th>
-        <th>curp</th>
-        <th>nombre</th>
-        <th>sexo</th>
-        <th>edad</th>
-        <th>puesto</th>
+        <th>id_puntuacion</th>
+        <th>valor</th>
+        <th>tributo_id</th>
+        <th>prueba_id</th>
       </tr>
     </thead>
     <tbody>
-        <%
-@SuppressWarnings("unchecked")
-List<Vigilante> vigilantes = (List<Vigilante>) request.getAttribute("vigilantes");
-if (vigilantes != null) {
-  for (Vigilante vigilante : vigilantes) {
-%>
-  <tr>
-    <td><%= vigilante.getid_vigilante() %></td>
-    <td><%= vigilante.getcurp() %></td>
-    <td><%= vigilante.getnombre() %></td>
-    <td><%= vigilante.getsexo() %></td>
-    <td><%= vigilante.getedad() %></td>
-    <td><%= vigilante.getpuesto() %></td>
-  </tr>
-<%
-  }
-}
-%>
+      <%
+         @SuppressWarnings("unchecked")
+         List<Puntuacion> puntuaciones = (List<Puntuacion>) request.getAttribute("puntuaciones");
+         if (puntuaciones != null) {
+           for (Puntuacion puntuacion : puntuaciones) {
+      %>
+      <tr>
+        <td><%= puntuacion.getid_puntuacion() %></td>
+        <td><%= puntuacion.getvalor() %></td>
+        <td><%= puntuacion.gettributo_id() %></td>
+        <td><%= puntuacion.getprueba_id() %></td>
+      </tr>
+      <% 
+          }
+        }
+       %>
     </tbody>
   </table>
 </body>

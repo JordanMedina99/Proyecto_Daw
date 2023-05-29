@@ -28,7 +28,7 @@ public class VistaPuntuacionesServlet extends HttpServlet {
             request.setAttribute("puntuaciones", puntuaciones);
 
             // Redirigir a tu página JSP para mostrar las puntuaciones
-            request.getRequestDispatcher("ruta_de_tu_jsp.jsp").forward(request, response);
+            request.getRequestDispatcher("formularios/vista_puntuaciones.jsp").forward(request, response);
         } catch (Exception e) {
             e.printStackTrace();
             // Manejar cualquier excepción y mostrar un mensaje de error si es necesario
