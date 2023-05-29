@@ -48,10 +48,11 @@ public class PuntuacionDao {
 
         try {
             conn = Conexion.getConnection();
-            ps = conn.prepareStatement("INSERT INTO puntuacion (valor, tributo_id, prueba_id) VALUES (?, ?, ?)");
-            ps.setInt(1, puntuacion.getvalor());
-            ps.setInt(2, puntuacion.gettributo_id());
-            ps.setInt(3, puntuacion.getprueba_id());
+            ps = conn.prepareStatement("INSERT INTO puntuacion (id_puntuacion, valor, tributo_id, prueba_id) VALUES (?, ?, ?, ?)");
+            ps.setInt(1, puntuacion.getid_puntuacion());
+            ps.setInt(2, puntuacion.getvalor());
+            ps.setInt(3, puntuacion.gettributo_id());
+            ps.setInt(4, puntuacion.getprueba_id());
 
             ps.executeUpdate();
         } catch (SQLException e) {

@@ -154,6 +154,18 @@
   	<description></description>
   	<servlet-class>controladores.VistaPuntuacionesServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>IngresarPuntuacionesServlet</servlet-name>
+  	<display-name>IngresarPuntuacionesServlet</display-name>
+  	<description></description>
+  	<servlet-class>controladores.IngresarPuntuacionesServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ActualizarPuntuacionesServlet</servlet-name>
+  	<display-name>ActualizarPuntuacionesServlet</display-name>
+  	<description></description>
+  	<servlet-class>controladores.ActualizarPuntuacionesServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>LoginServlet</servlet-name>
   	<url-pattern>/LoginServlet</url-pattern>
@@ -253,5 +265,13 @@
   <servlet-mapping>
   	<servlet-name>VistaPuntuacionesServlet</servlet-name>
   	<url-pattern>/VistaPuntuacionesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>IngresarPuntuacionesServlet</servlet-name>
+  	<url-pattern>/IngresarPuntuacionesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ActualizarPuntuacionesServlet</servlet-name>
+  	<url-pattern>/ActualizarPuntuacionesServlet</url-pattern>
   </servlet-mapping>
 </web-app>
