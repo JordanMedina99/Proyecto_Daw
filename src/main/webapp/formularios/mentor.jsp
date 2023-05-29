@@ -72,8 +72,8 @@
   
   <main>
     <div class="button-container">
-      <a href="Vista" class="button">Vigilantes</a>
-      <a href="Vist" class="button">Pruebas</a>
+      <a href="VistaMentoresServlet" class="button">Mentores</a>
+      <a href="VistaTributosUserMentor_TributoServlet" class="button">Tributos</a>
       <a href="Vista" class="button">Puntuacion</a>
       <a href="index.jsp" class="button">Cerrar sesión</a> <!-- Botón para cerrar sesión -->
     </div>
