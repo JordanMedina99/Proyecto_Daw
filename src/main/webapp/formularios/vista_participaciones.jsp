@@ -71,7 +71,7 @@
     
    <h1>Esta es la tabla de Participaciones de los tributos existentes</h1>
   <div class="button-container"> 
-  <a href="formularios/ingr.jsp" class="button">Ingresar</a>
+  <a href="formularios/ingresar_participacion.jsp" class="button">Ingresar</a>
   <a href="formularios/mop" class="button">Modificar</a>
   <a href="formularios/.jsp" class="button">Eliminar</a>
   </div>
