@@ -79,6 +79,7 @@
       <a href="VistaMentoresServlet" class="button">Mentores</a>
       <a href="VistaPruebasServlet" class="button">Pruebas</a>
       <a href="VistaPuntuacionesServlet" class="button">Puntuacion</a>
+      <a href="VistaParticipacionesServlet" class="button">Participacion</a>
       <a href="index.jsp" class="button">Cerrar sesión</a> <!-- Botón para cerrar sesión -->
     </div>
   </main>
