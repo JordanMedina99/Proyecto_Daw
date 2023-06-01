@@ -178,6 +178,12 @@
   	<description></description>
   	<servlet-class>controladores.VistaTributosUserMentor_TributoServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>VistaParticipacionesServlet</servlet-name>
+  	<display-name>VistaParticipacionesServlet</display-name>
+  	<description></description>
+  	<servlet-class>controladores.VistaParticipacionesServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>LoginServlet</servlet-name>
   	<url-pattern>/LoginServlet</url-pattern>
@@ -293,5 +299,9 @@
   <servlet-mapping>
   	<servlet-name>VistaTributosUserMentor_TributoServlet</servlet-name>
   	<url-pattern>/VistaTributosUserMentor_TributoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>VistaParticipacionesServlet</servlet-name>
+  	<url-pattern>/VistaParticipacionesServlet</url-pattern>
   </servlet-mapping>
 </web-app>
