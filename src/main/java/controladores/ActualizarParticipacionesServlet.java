@@ -1,6 +1,9 @@
 package controladores;
 
 import java.io.IOException;
+import java.sql.Date;
+import java.sql.Time;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -17,17 +20,14 @@ public class ActualizarParticipacionesServlet extends HttpServlet {
         try {
             // Obtener los parámetros del formulario
             int id_participacion = Integer.parseInt(request.getParameter("id_participacion"));
-            String fechaStr = request.getParameter("fecha");
-            String tiempoEmpleadoStr = request.getParameter("tiempo_empleado");
+            Date fecha = Date.valueOf(request.getParameter("fecha"));
+            Time tiempo_empleado = Time.valueOf(request.getParameter("tiempo_empleado"));
             int tributo_id = Integer.parseInt(request.getParameter("tributo_id"));
             int prueba_id = Integer.parseInt(request.getParameter("prueba_id"));
 
-            // Convertir los parámetros a los tipos de datos correspondientes
-            java.sql.Date fecha = java.sql.Date.valueOf(fechaStr);
-            java.sql.Time tiempoEmpleado = java.sql.Time.valueOf(tiempoEmpleadoStr);
 
             // Crear un objeto Participacion con los datos actualizados
-            Participacion participacion = new Participacion(id_participacion, fecha, tiempoEmpleado, tributo_id, prueba_id);
+            Participacion participacion = new Participacion(id_participacion, fecha, tiempo_empleado, tributo_id, prueba_id);
 
             // Crear una instancia de ParticipacionDao para realizar la actualización
             ParticipacionDao participacionDao = new ParticipacionDao();
