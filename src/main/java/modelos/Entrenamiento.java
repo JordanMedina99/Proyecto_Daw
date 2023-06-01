@@ -26,7 +26,7 @@ public class Entrenamiento implements Serializable {
         return tributo_id;
     }
 
-    public void settributo_Id(int tributo_id) {
+    public void settributo_id(int tributo_id) {
         this.tributo_id = tributo_id;
     }
 
