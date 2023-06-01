@@ -1,6 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-    
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
  
 <!DOCTYPE html>
 <html>
@@ -29,12 +27,12 @@
     /* Estilos de los botones */
     .button-container {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 20px;
       justify-items: center;
       align-items: center;
       margin: 50px auto;
-      max-width: 600px;
+      max-width: 800px;
     }
 
     .button {
@@ -80,6 +78,9 @@
       <a href="VistaPruebasServlet" class="button">Pruebas</a>
       <a href="VistaPuntuacionesServlet" class="button">Puntuacion</a>
       <a href="VistaParticipacionesServlet" class="button">Participacion</a>
+      <a href="Vista" class="button">diifcultad</a>
+      <a href="Vista" class="button">entrenamiento</a>
+      <a href="Vista" class="button">Pagina web</a>
       <a href="index.jsp" class="button">Cerrar sesión</a> <!-- Botón para cerrar sesión -->
     </div>
   </main>
@@ -89,4 +90,3 @@
   </footer>
 </body>
 </html>
- 
