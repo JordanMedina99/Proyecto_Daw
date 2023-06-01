@@ -68,28 +68,29 @@ public class ParticipacionDao {
 		}
 
  
+	 public void actualizarParticipacion(Participacion participacion) throws ClassNotFoundException {
+		    Connection conn = null;
+		    PreparedStatement ps = null;
 
-	    public void actualizarParticipacion(Participacion participacion) throws ClassNotFoundException {
-	        Connection conn = null;
-	        PreparedStatement ps = null;
+		    try {
+		        conn = Conexion.getConnection();
+		        ps = conn.prepareStatement("UPDATE participacion SET id_participacion=?, fecha=?, tiempo_empleado=?, tributo_id=?, prueba_id=? WHERE id_participacion=?");
+		        ps.setInt(1, participacion.getid_participacion());
+		        ps.setDate(2, participacion.getfecha());
+		        ps.setTime(3, participacion.gettiempo_empleado());
+		        ps.setInt(4, participacion.gettributo_id());
+		        ps.setInt(5, participacion.getprueba_id());
+		        ps.setInt(6, participacion.getid_participacion());
+		        
+		        ps.executeUpdate();
+		    } catch (SQLException e) {
+		        e.printStackTrace();
+		    } finally {
+		        Conexion.close(ps);
+		        Conexion.close(conn);
+		    }
+		}
 
-	        try {
-	            conn = Conexion.getConnection();
-	            ps = conn.prepareStatement("UPDATE participacion SET fecha=?, tiempo_empleado=?, tributo_id=?, prueba_id=? WHERE id_participacion=?");
-	            ps.setDate(1, participacion.getfecha());
-	            ps.setTime(2, participacion.gettiempo_empleado());
-	            ps.setInt(3, participacion.gettributo_id());
-	            ps.setInt(4, participacion.getprueba_id());
-	            ps.setInt(5, participacion.getid_participacion());
-
-	            ps.executeUpdate();
-	        } catch (SQLException e) {
-	            e.printStackTrace();
-	        } finally {
-	            Conexion.close(ps);
-	            Conexion.close(conn);
-	        }
-	    }
 
 	    public void eliminarParticipacion(int id_participacion) throws ClassNotFoundException {
 	        Connection conn = null;

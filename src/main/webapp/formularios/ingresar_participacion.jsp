@@ -18,7 +18,7 @@
     <br>
 
     <label for="tiempo_empleado">tiempo_empleado:</label>
-    <input type="time" name="tiempo_empleado" id="tiempo_empleado" required>
+    <input type="time" name="tiempo_empleado" id="tiempo_empleado" step="1" required>
     <br>
     
     <label for="tributo_id">tributo_id:</label>
