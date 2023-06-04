@@ -52,14 +52,14 @@
 <body>
   <nav class="navbar">
     <div class="logo">
-      <img src="../images/logosd_.jpg" alt="Logo" width="150px" height="150px">
+      <img src=" tienelogosd_.jpg" alt="Logo" width="150px" height="150px">
     </div>
     <div class="center-text">
       Sorpresas próximamente
     </div>
     <div class="links">
       <a href="../index.jsp" style="font-size: 24px;">Home</a>
-      <a href="#" style="font-size: 24px;">Tributos</a>
+      <a href="tributos_imagenes.jsp" style="font-size: 24px;">Tributos</a>
       <a href="#" style="font-size: 24px;">Mentores</a>
       <a href="#" style="font-size: 24px;">Vigilantes</a>
     </div>
