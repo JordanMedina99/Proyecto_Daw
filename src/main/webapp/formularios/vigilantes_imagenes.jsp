@@ -81,16 +81,16 @@
       <p class="caption">Nombre: Sebastian</p>
     </div>
     <div class="image-container">
-      <img src="../images/mentores/Victoria.jpg" alt="Image 8">
+      <img src="../images/vigilantes/Victoria.jpg" alt="Image 8">
       <p class="caption">Nombre: Victoria </p>
     </div>
     <div class="image-container">
-      <img src="../images/mentores/Mateo.jpg" alt="Image 9">
+      <img src="../images/vigilantes/Mateo.jpg" alt="Image 9">
       <p class="caption">Nombre: Mateo</p>
     </div>
     <div class="image-container">
-      <img src="../images/mentores/Camilla.jpg" alt="Image 10">
-      <p class="caption">Nombre: Camilla</p>
+      <img src="../images/vigilantes/Camila.jpg" alt="Image 10">
+      <p class="caption">Nombre: Camila</p>
     </div>
     
      </div>

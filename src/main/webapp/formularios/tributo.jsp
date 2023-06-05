@@ -74,7 +74,7 @@
     <div class="button-container">
       <a href="VistaTributosUserMentor_TributoServlet" class="button">Tributos</a>
       <a href="VistaPosicionesServlet" class="button">Posiciones</a>
-      <a href="Vis" class="button">Puntuacion</a>
+      <a href="formularios/tributos_imagenes.jsp" class="button">Vista de los tributos</a>
       <a href="index.jsp" class="button">Cerrar sesión</a> <!-- Botón para cerrar sesión -->
     </div>
   </main>

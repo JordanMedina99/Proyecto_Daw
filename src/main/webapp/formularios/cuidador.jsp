@@ -75,6 +75,7 @@
       <a href="VistaVigilantesUserVigilanteServlet" class="button">Vigilantes</a>
       <a href="VistaPruebasUserVigilante" class="button">Pruebas</a>
       <a href="VistaPuntuacionesServlet" class="button">Puntuacion</a>
+      <a href="formularios/vigilantes_imagenes.jsp" class="button">Vista de vigilantes</a>
       <a href="index.jsp" class="button">Cerrar sesión</a> <!-- Botón para cerrar sesión -->
     </div>
   </main>
