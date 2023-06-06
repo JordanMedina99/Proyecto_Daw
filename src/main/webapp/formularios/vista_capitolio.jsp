@@ -73,9 +73,9 @@
     
    <h1>Esta es la tabla del capitolio </h1>
   <div class="button-container"> 
-  <a href="formulario" class="button">Ingresar</a>
-  <a href="formularijsp" class="button">Modificar</a>
-  <a href="formulap" class="button">Eliminar</a>
+  <a href="formularios/ingresar_capitolio.jsp" class="button">Ingresar</a>
+  <a href="formularios/actualizar_capitolio.jsp" class="button">Modificar</a>
+  <a href="formularios/eliminar_capitolio.jsp" class="button">Eliminar</a>
   </div>
   
   <table>

@@ -87,6 +87,7 @@ public class CapitolioDao {
             ps.setFloat(6, capitolio.getporcentaje_hombres());
             ps.setFloat(7, capitolio.getporcentaje_mujeres());
             ps.setString(8, capitolio.getlugares_interes());
+            ps.setInt(9, capitolio.getid_capitolio());
 
             ps.executeUpdate();
         } catch (SQLException e) {
