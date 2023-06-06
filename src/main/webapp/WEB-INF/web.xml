@@ -214,6 +214,18 @@
   	<description></description>
   	<servlet-class>controladores.VistaEntrenamientoServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>VistaCapitolioServlet</servlet-name>
+  	<display-name>VistaCapitolioServlet</display-name>
+  	<description></description>
+  	<servlet-class>controladores.VistaCapitolioServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>IngresarCapitolioServlet</servlet-name>
+  	<display-name>IngresarCapitolioServlet</display-name>
+  	<description></description>
+  	<servlet-class>controladores.IngresarCapitolioServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>LoginServlet</servlet-name>
   	<url-pattern>/LoginServlet</url-pattern>
@@ -353,5 +365,13 @@
   <servlet-mapping>
   	<servlet-name>VistaEntrenamientoServlet</servlet-name>
   	<url-pattern>/VistaEntrenamientoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>VistaCapitolioServlet</servlet-name>
+  	<url-pattern>/VistaCapitolioServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>IngresarCapitolioServlet</servlet-name>
+  	<url-pattern>/IngresarCapitolioServlet</url-pattern>
   </servlet-mapping>
 </web-app>
