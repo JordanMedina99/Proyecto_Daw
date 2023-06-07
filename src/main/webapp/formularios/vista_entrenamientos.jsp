@@ -70,12 +70,16 @@
   <img src="images/logo_capitolio.png" alt="Logo"> <!-- Cambia "ruta-a-tu-imagen.jpg" por la ruta de tu imagen -->
     
    <h1>Esta es la tabla  de los entrenamientos existentes</h1>
- 
+    <div class="button-container"> 
+  <a href="formularios/ingresar_entrenamiento.jsp" class="button">Ingresar</a>
+  <a href="formularios/actualizar_entrenamiento.jsp" class="button">Modificar</a>
+  <a href="formularios/eliminar_entrenamiento.jsp" class="button">Eliminar</a>
+  </div>
   
   <table>
     <thead>
       <tr>
-        <th>id_entrenamiento</th>
+        <th>id_entrenamiento</th> 
         <th>tributo_id</th>
         <th>prueba_id</th>
       </tr>

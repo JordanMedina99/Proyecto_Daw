@@ -40,6 +40,26 @@ public class EntrenamientoDao {
 
         return lista;
     }
+	
+	public void insertarEntrenamiento(Entrenamiento entrenamiento) throws ClassNotFoundException {
+	    Connection conn = null;
+	    PreparedStatement ps = null;
+
+	    try {
+	        conn = Conexion.getConnection();
+	        ps = conn.prepareStatement("INSERT INTO entrenamiento (id_entrenamiento, tributo_id, prueba_id) VALUES (?, ?, ?)");
+	        ps.setInt(1, entrenamiento.getid_entrenamiento());
+	        ps.setInt(2, entrenamiento.gettributo_id());
+	        ps.setInt(3, entrenamiento.getprueba_id());
+
+	        ps.executeUpdate();
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	    } finally {
+	        Conexion.close(ps);
+	        Conexion.close(conn);
+	    }
+	}
 
     public void eliminarEntrenamiento(int id_entrenamiento) throws ClassNotFoundException {
         Connection conn = null;

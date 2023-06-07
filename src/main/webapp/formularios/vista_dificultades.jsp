@@ -70,8 +70,12 @@
   <img src="images/logo_capitolio.png" alt="Logo"> <!-- Cambia "ruta-a-tu-imagen.jpg" por la ruta de tu imagen -->
     
    <h1>Esta es la tabla de Participaciones de las dificultades existentes</h1>
- 
-  
+  <div class="button-container"> 
+  <a href="formularios/ingresar_dificultad.jsp" class="button">Ingresar</a>
+  <a href="formularios/actualizar_dificultad.jsp" class="button">Modificar</a>
+  <a href="formularios/eliminar_dificultad.jsp" class="button">Eliminar</a>
+  </div>
+   
   <table>
     <thead>
       <tr>

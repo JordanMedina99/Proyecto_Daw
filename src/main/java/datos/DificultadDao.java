@@ -39,6 +39,25 @@ public class DificultadDao {
 
         return lista;
     }
+	
+	public void insertarDificultad(Dificultad dificultad) throws ClassNotFoundException {
+	    Connection conn = null;
+	    PreparedStatement ps = null;
+
+	    try {
+	        conn = Conexion.getConnection();
+	        ps = conn.prepareStatement("INSERT INTO dificultad (Id_Dificultad, descripcion) VALUES (?, ?)");
+	        ps.setString(1, dificultad.getId_Dificultad());
+	        ps.setString(2, dificultad.getdescripcion());
+
+	        ps.executeUpdate();
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	    } finally {
+	        Conexion.close(ps);
+	        Conexion.close(conn);
+	    }
+	}
 
     public void eliminarDificultad(String idDificultad) throws ClassNotFoundException {
         Connection conn = null;

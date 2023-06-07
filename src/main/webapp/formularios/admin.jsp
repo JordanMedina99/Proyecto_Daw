@@ -1,5 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
- 
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,6 +10,9 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     /* Estilos del encabezado */
@@ -31,8 +33,10 @@
       gap: 20px;
       justify-items: center;
       align-items: center;
-      margin: 50px auto;
+      margin: auto;
       max-width: 800px;
+      flex-grow: 1;
+      padding-bottom: 20px; /* Agregado para dar espacio al footer */
     }
 
     .button {
@@ -57,9 +61,6 @@
       background-color: #f2f2f2;
       padding: 10px;
       text-align: center;
-      position: absolute;
-      bottom: 0;
-      width: 100%;
     }
   </style>
 </head>
@@ -78,8 +79,8 @@
       <a href="VistaPruebasServlet" class="button">Pruebas</a>
       <a href="VistaPuntuacionesServlet" class="button">Puntuacion</a>
       <a href="VistaParticipacionesServlet" class="button">Participacion</a>
-      <a href="VistaDificultadesServlet" class="button">difcultad</a>
-      <a href="VistaEntrenamientoServlet" class="button">entrenamiento</a>
+      <a href="VistaDificultadesServlet" class="button">Dificultad</a>
+      <a href="VistaEntrenamientoServlet" class="button">Entrenamiento</a>
       <a href="VistaCapitolioServlet" class="button">Capitolio</a>
       <a href="formularios/pagina_web.jsp" class="button">Pagina web</a>
       <a href="index.jsp" class="button">Cerrar sesión</a> <!-- Botón para cerrar sesión -->
@@ -91,3 +92,4 @@
   </footer>
 </body>
 </html>
+
