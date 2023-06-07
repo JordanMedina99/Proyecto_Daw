@@ -65,7 +65,7 @@ public class LoginServlet extends HttpServlet {
         // Si no se encontró un usuario válido, mostrar mensaje de error
         request.setAttribute("error", "Credenciales inválidas");
         //request.getRequestDispatcher("/formularios/error.jsp").forward(request, response);
-        request.getRequestDispatcher("/WEB-INF/index.jsp").forward(request, response);
+        request.getRequestDispatcher("formularios/error_iniciando_sesion.jsp").forward(request, response);
 
     }
 }
