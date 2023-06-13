@@ -4,7 +4,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Logo y Matriz de Imágenes</title>
+  <title>Visualización  de los tributos</title>
   <style>
     body {
       margin: 0;

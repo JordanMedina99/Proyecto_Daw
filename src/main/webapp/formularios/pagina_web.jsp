@@ -47,7 +47,7 @@
       font-size: 28px; /* Ajustar el tamaño de fuente a tu preferencia */
     }
   </style>
-  <title>Static Image</title>
+  <title>Pagina web principal</title>
 </head>
 <body>
   <nav class="navbar">

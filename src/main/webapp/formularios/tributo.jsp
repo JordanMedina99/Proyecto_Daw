@@ -6,7 +6,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Usuario Vigilante</title>
+  <title>Usuario Tributo</title>
   <style>
     /* Estilos globales */
     body {

@@ -4,7 +4,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Imagenes de los mentores</title>
+  <title>Visualización  de los mentores</title>
   <style>
     body {
       margin: 0;
