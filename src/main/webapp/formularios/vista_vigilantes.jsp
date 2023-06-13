@@ -69,7 +69,7 @@
 <body>
   <img src="images/logo_capitolio.png" alt="Logo"> <!-- Cambia "ruta-a-tu-imagen.jpg" por la ruta de tu imagen -->
     
-   <h1>Esta es la tabla de pruebas existentes</h1>
+   <h1>Esta es la tabla de vigilantes existentes</h1>
   <div class="button-container"> 
   <a href="formularios/ingresar_vigilantes.jsp" class="button">Ingresar</a>
   <a href="formularios/actualizar_vigilantes.jsp" class="button">Modificar</a>
@@ -79,7 +79,7 @@
   <table>
     <thead>
       <tr>
-        <th>id_prueba</th>
+        <th>id_vigilante</th>
         <th>curp</th>
         <th>nombre</th>
         <th>sexo</th>

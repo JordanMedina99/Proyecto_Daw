@@ -74,7 +74,7 @@
   <table>
     <thead>
       <tr>
-        <th>id_prueba</th>
+        <th>id_vigilante</th>
         <th>curp</th>
         <th>nombre</th>
         <th>sexo</th>

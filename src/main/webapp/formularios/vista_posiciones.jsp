@@ -71,7 +71,7 @@
 <body>
   <img src="images/logo_capitolio.png" alt="Logo"> <!-- Cambia "ruta-a-tu-imagen.jpg" por la ruta de tu imagen -->
     
-   <h1>Esta es la tabla de tributos existentes</h1>
+   <h1>Esta es la tabla de posiciones existentes</h1>
   
   
   <table>
